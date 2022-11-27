@@ -21,19 +21,19 @@ def load_dataset(dataset_path):
 	#Load the csv file at the given path into the pandas DataFrame and return the DataFrame
 	return pd.read_csv(dataset_path);
 
-def dataset_stat(dataset_df):	
+#def dataset_stat(dataset_df):	
 	#To-Do: Implement this function
 	#For the given DataFrame, return the following statistical analysis results in order
 	#Number of features
 	#Number of data for class 0
 	#Number of data for class 1
-	return dataset_df.shape[1]-1, len(dataset_df['target']==0), len(dataset_df['target']==1)
+	#return dataset_df.shape[1]-1, len(dataset_df['target']==0), len(dataset_df['target']==1)
 
-def split_dataset(dataset_df, testset_size):
+#def split_dataset(dataset_df, testset_size):
 	#To-Do: Implement this function
 	#Splitting the given DataFrame and return train data, test data, train label, and test label in order
 	#You must split the data using the given test size
-	return train_test_split(dataset_df.iloc['',''],dataset_df['target'], test_size=testset_size)
+	#return train_test_split(dataset_df.iloc['',''],dataset_df['target'], test_size=testset_size)
 
 def decision_tree_train_test(x_train, x_test, y_train, y_test):
 	#To-Do: Implement this function
